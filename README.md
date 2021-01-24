@@ -35,6 +35,24 @@ Confidence(X, Y) = Freq(X,Y) / Freq(X)
 
 Lift = Support (X, Y) / ( Support(X) * Support(Y) )
 
+# Let's interpret the table (for Grocery Store) 
+
+* **0 (MILK - BREAD):**
+
+Support: Milk and bread were observed together in 20% of shopping.
+
+Confince: 80% of those who bought milk also bought bread.
+
+Lift: Milk sales increase bread sales 1.23 times.
+
+* **4 (MAGGIE - TEA):**
+
+Support: Maggie and Tea were observed together in 20% of shopping.
+
+Confince: 80% of those who bought Maggie also bought Tea.
+
+Lift: Maggi sales increase Tea sales 2.29 times.
+
 https://www.kdnuggets.com/2016/04/association-rules-apriori-algorithm-tutorial.html
 
 https://michael.hahsler.net/research/recommender/associationrules.html
