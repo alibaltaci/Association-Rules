@@ -1,6 +1,8 @@
 # Association Rules
 ![basket](https://user-images.githubusercontent.com/71599944/105632564-dba9a200-5e64-11eb-9839-f1996b0a1d34.png)
 
+Association Rules find all sets of items (itemsets) that have support greater than the minimum support and then using the large itemsets to generate the desired rules that have confidence greater than the minimum confidence. The lift of a rule is the ratio of the observed support to that expected if X and Y were independent.  A typical and widely used example of association rules application is market basket analysis
+
 # Business Problem
 
 What are Association Rules?
@@ -31,9 +33,15 @@ Support(X, Y) = Freq(X,Y)/N
 
 Confidence(X, Y) = Freq(X,Y) / Freq(X)
 
-**Lift:**
+**Lift:** (originally called Interest)
 
 Lift = Support (X, Y) / ( Support(X) * Support(Y) )
+
+1. Candidate itemsets are generated using only the large itemsets of the previous pass without considering the transactions in the database.
+2. The large itemset of the previous pass is joined with itself to generate all itemsets whose size is higher by 1.
+3. Each generated itemset that has a subset which is not large is deleted. The remaining itemsets are the candidate ones.
+
+The Apriori algorithm takes advantage of the fact that any subset of a frequent itemset is also a frequent itemset. The algorithm can therefore, reduce the number of candidates being considered by only exploring the itemsets whose support count is greater than the minimum support count. All infrequent itemsets can be pruned if it has an infrequent subset.
 
 # Let's interpret the table (for Grocery Store) 
 
