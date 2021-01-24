@@ -37,6 +37,9 @@ Lift = Support (X, Y) / ( Support(X) * Support(Y) )
 
 # Let's interpret the table (for Grocery Store) 
 
+![table](https://user-images.githubusercontent.com/71599944/105632730-d567f580-5e65-11eb-97bd-b9aa01e3d9d2.png)
+
+
 * **0 (MILK - BREAD):**
 
 Support: Milk and bread were observed together in 20% of shopping.
@@ -53,6 +56,14 @@ Confince: 80% of those who bought Maggie also bought Tea.
 
 Lift: Maggi sales increase Tea sales 2.29 times.
 
+# REFERENCES
+
+**Reference Notebook:** https://www.kaggle.com/mariekaram/apriori-association-rule
+
+**Dataset:** https://www.kaggle.com/shazadudwadia/supermarket
+
+**Articles:**
+
 https://www.kdnuggets.com/2016/04/association-rules-apriori-algorithm-tutorial.html
 
 https://michael.hahsler.net/research/recommender/associationrules.html
@@ -61,6 +72,4 @@ http://www.saedsayad.com/association_rules.htm
 
 https://ab.org.tr/ab16/bildiri/46.pdf
 
-https://www.kaggle.com/mariekaram/apriori-association-rule
 
-https://www.kaggle.com/shazadudwadia/supermarket
