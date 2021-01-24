@@ -15,7 +15,7 @@ Many e-commerce companies around the world or companies, platforms like Spotify,
 
 So what do these association analyzes do?
 
-**Apriori Algorithm:**
+# Apriori Algorithm:
 
 It is the most used method in this field.
 
